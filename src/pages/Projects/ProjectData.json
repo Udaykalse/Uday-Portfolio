@@ -1,0 +1,37 @@
+[
+  {
+    "Name": "Full-Stack Applications-Blog",
+    "Image": "https://img.freepik.com/premium-vector/social-media-marketing-concept-with-people-scene-flat-web-design-man-with-megaphone-making-promotion-blog-data-analysis-vector-illustration-social-media-banner-marketing-material_9209-14412.jpg?w=1380",
+    "Description": "A dynamic full-stack blog application built using the MERN stack, allowing users to create, read, update, and delete posts. Features user authentication, comment functionality, and responsive design for an optimal user experience.",
+    "Github": "https://github.com/project1",
+    "Live": "https://project1.live"
+  },
+  {
+    "Name": "Authentication and Authorization",
+    "Image": "https://img.freepik.com/premium-vector/website-security-flat-illustration-editable-vector-design_203633-1079.jpg?w=826",
+    "Description": "Authentication and Authorization:- is a MERN stack project that implements secure user authentication and role-based access control (RBAC) for managing resources efficiently.",
+    "Github": "https://github.com/project2",
+    "Live": "https://project2.live"
+  },
+  {
+    "Name": "Full-Stack Applications-MovieSite",
+    "Image": "https://media.istockphoto.com/id/1445871179/photo/movie-projector-and-movie-directors-chair-in-dark-place-3d-rendering.jpg?s=2048x2048&w=is&k=20&c=uT25d_vMNm4sCr__4km6nS_xI0Y1ouVAtlTXnPyoZmU=",
+    "Description": "A dynamic full-stack MovieSite application built using the MERN stack, allowing users to create, read, update, and delete posts. Features user comment functionality, and responsive design for an optimal user experience.",
+    "Github": "https://github.com/project2",
+    "Live": "https://project2.live"
+  },
+  {
+    "Name": "RESTful API Development",
+    "Image": "https://www.altexsoft.com/media/2021/03/rest_api_works.png",
+    "Description": "Build scalable REST APIs using MongoDB, Express.js, React, and Node.js for efficient data management and seamless frontend integration.",
+    "Github": "https://github.com/project2",
+    "Live": "https://project2.live"
+  },
+  {
+    "Name": "Data Integration",
+    "Image": "https://res.cloudinary.com/talend/image/upload/w_1408/q_auto/qlik/glossary/data-integration/seo-hero-data-integration_d29atr.jpg",
+    "Description": "The MERN project Data Integration involves building a robust platform that seamlessly integrates data across MongoDB, Express.js, React, and Node.js, ensuring efficient handling and processing of diverse datasets.",
+    "Github": "https://github.com/project2",
+    "Live": "https://project2.live"
+  }
+]
