@@ -41,3 +41,9 @@ const SocialLinks = () => {
 };
 
 export default SocialLinks;
+
+
+// Online Assessment (80 minutes)
+// Aptitude Test - Verbal, Analytical, Quantitative (Each section has 20 minutes/ 20 questions)
+// Written Communication Test (20 minutes)
+// Upon selection in the Online Assessment, candidates will be required to go through Business Discussion Round
