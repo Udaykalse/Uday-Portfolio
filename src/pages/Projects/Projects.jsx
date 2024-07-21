@@ -4,13 +4,14 @@ import { SlArrowRight } from "react-icons/sl";
 import { FaGithub } from "react-icons/fa";
 import { SiNetlify } from "react-icons/si";
 
+
 function Projects() {
   return (
-    <div className="flex flex-col justify-center items-center w-full h-full">
+    <div className="flex flex-col justify-center items-center bg-divColor w-full h-full">
       {Pdata.map((project, index) => (
         <div
           key={index}
-          className="space-x-4 bg-white shadow-md rounded p-4 w-2/3 mt-4  h-min flex border border-gray-300 min-h-40 transition-all duration-700 hover:scale-110"
+          className="space-x-4 bg-cardsDIv shadow-md rounded p-4 w-2/3 mt-4  h-min flex border border-gray-300 min-h-40 transition-all duration-700 hover:scale-110"
         >
           <div className="w-full md:w-1/2 ">
             <img

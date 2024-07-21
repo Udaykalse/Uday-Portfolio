@@ -1,3 +1,15 @@
+// /** @type {import('tailwindcss').Config} */
+// module.exports = {
+//   content: [
+//     "./index.html",
+//     "./src/**/*.{js,ts,jsx,tsx}",
+//   ],
+//   theme: {
+//     extend: {},
+//   },
+//   plugins: [],
+// }
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -5,7 +17,13 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        navbarColor: '#003135',
+        divColor: '#024950',
+        cardsDIv:'#AFDDE5'
+      },
+    },
   },
   plugins: [],
 }
