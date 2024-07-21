@@ -7,14 +7,12 @@ import Contacts from "./pages/contacts/Contacts";
 import Projects from "./pages/Projects/Projects";
 import Blogs from "./pages/Blog/Blogs";
 import Footer from "./components/Footer/Footer";
-import SocialLinks from "./components/Dashbord/SocialLinks";
 
 function App() {
   return (
     <Router>
         <div className="relative">
         <Navbar />
-        <SocialLinks />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
