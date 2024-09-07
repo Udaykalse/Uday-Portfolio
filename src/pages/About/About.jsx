@@ -26,7 +26,7 @@ const About = () => {
   ];
 
   return (
-    <header className="bg-divColor w-full h-full p-8">
+    <header className="bg-divColor w-full h-full p-8 ">
       <div className="max-w-4xl mx-auto bg-transparent p-6 rounded-lg shadow-lg">
         
         <motion.section 
