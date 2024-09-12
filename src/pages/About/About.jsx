@@ -1,214 +1,82 @@
-import React from "react";
-import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
-import { motion } from "framer-motion"; // Importing framer-motion for animations
-import { useInView } from 'react-intersection-observer'; // Importing for scroll into view detection
-
+import React from 'react';
+import {  PhoneIcon, CalendarIcon, MapIcon, BriefcaseIcon, AcademicCapIcon } from '@heroicons/react/24/outline';
+import { BiMailSend } from 'react-icons/bi';
 const About = () => {
-  const { ref: aboutRef, inView: aboutInView } = useInView({ triggerOnce: true });
-  const { ref: educationRef, inView: educationInView } = useInView({ triggerOnce: true });
-  const { ref: experienceRef, inView: experienceInView } = useInView({ triggerOnce: true });
-
-  const steps = [
-    {
-      title: "Higher Secondary Certificate",
-      description:
-        "Maharashtra Junior College, Latur, Maharashtra (2017 – 2019)",
-    },
-    {
-      title: "Bachelor of Science in Computer Science",
-      description: "Dayanand Science College, Latur, Maharashtra (2019 – 2022)",
-    },
-    {
-      title: "Master of Science in Computer Science",
-      description:
-        "Swami Vivekanand College of Information Technology, Udgir, Maharashtra (2023 – Present)",
-    },
-  ];
-
   return (
-    <header className="bg-divColor w-full h-full p-8 ">
-      <div className="max-w-4xl mx-auto bg-transparent p-6 rounded-lg shadow-lg">
-        
-        <motion.section 
-          ref={aboutRef}
-          className="mb-6"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: aboutInView ? 1 : 0, y: aboutInView ? 0 : 50 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        >
-          <motion.h1 
-            className="text-3xl font-bold text-gray-800 mb-4"
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: aboutInView ? 1 : 0, y: aboutInView ? 0 : -50 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-          >
-            About Me
-          </motion.h1>
+    <div className="bg-gray-900 text-white py-12 px-6 lg:px-24">
+      <div className="max-w-4xl mx-auto">
+        {/* Header */}
+        <h1 className="text-4xl font-bold text-center mb-8">About Me</h1>
 
-          <section className="mb-6">
-            <motion.h2
-              className="text-2xl font-semibold text-gray-800 mb-2"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: aboutInView ? 1 : 0, y: aboutInView ? 0 : -20 }}
-              transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-            >
-              Contact Information
-            </motion.h2>
-            <p className="text-black-700 mb-2">Name: Udaysinh Kalse</p>
-            <p className="text-black-700 mb-2">Phone: +91 932-599-9657</p>
-            <div className="flex space-x-4">
-              <motion.a
-                href="mailto:udaykalse123@gmail.com"
-                className="text-blue-500 transition-transform duration-300 transform hover:scale-110"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.2, rotate: 15 }}
-              >
-                <FaEnvelope className="inline-block w-6 h-6" />
-              </motion.a>
-              <motion.a
-                href="https://www.linkedin.com/in/uday-kalse-5aa5862b7/"
-                className="text-blue-500 transition-transform duration-300 transform hover:scale-110"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.2, rotate: 15 }}
-              >
-                <FaLinkedin className="inline-block w-6 h-6" />
-              </motion.a>
-              <motion.a
-                href="https://github.com/Udaykalse"
-                className="text-blue-500 transition-transform duration-300 transform hover:scale-110"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.2, rotate: 15 }}
-              >
-                <FaGithub className="inline-block w-6 h-6" />
-              </motion.a>
+        {/* Personal Info */}
+        <div className="bg-gray-800 rounded-lg p-6 mb-10 shadow-lg">
+          <h2 className="text-2xl font-semibold mb-4">Personal Information</h2>
+          <ul className="space-y-4">
+            <li className="flex items-center">
+              <PhoneIcon className="h-5 w-5 text-indigo-500 mr-2" />
+              <span>+91 932-599-9657</span>
+            </li>
+            <li className="flex items-center">
+              <BiMailSend className="h-5 w-5 text-indigo-500 mr-2" />
+              <span>udaykalse123@gmail.com</span>
+            </li>
+            <li className="flex items-center">
+              <CalendarIcon className="h-5 w-5 text-indigo-500 mr-2" />
+              <span>Date of Birth: 22/12/2000</span>
+            </li>
+            <li className="flex items-center">
+              <MapIcon className="h-5 w-5 text-indigo-500 mr-2" />
+              <span>LinkedIn: <a href="https://www.linkedin.com/in/uday-kalse-5aa5862b7/" target='_blank' className="underline text-indigo-400">uday-kalse</a></span>
+            </li>
+            <li className="flex items-center">
+              <MapIcon className="h-5 w-5 text-indigo-500 mr-2" />
+              <span>GitHub: <a href="https://github.com/Udaykalse" target='_blank' className="underline text-indigo-400">uday-kalse</a></span>
+            </li>
+          </ul>
+        </div>
+
+        {/* Education */}
+        <div className="bg-gray-800 rounded-lg p-6 mb-10 shadow-lg">
+          <h2 className="text-2xl font-semibold mb-4">Education</h2>
+          <div className="space-y-6">
+            <div className="flex items-start">
+              <AcademicCapIcon className="h-6 w-6 text-indigo-500 mr-4" />
+              <div>
+                <h3 className="font-semibold">Master of Science in Computer Science</h3>
+                <p className="text-sm text-gray-400">Swami Vivekanand College of Information Technology, Udgir, Maharashtra (2023 – Present)</p>
+              </div>
             </div>
-          </section>
+            <div className="flex items-start">
+              <AcademicCapIcon className="h-6 w-6 text-indigo-500 mr-4" />
+              <div>
+                <h3 className="font-semibold">Bachelor of Science in Computer Science</h3>
+                <p className="text-sm text-gray-400">Dayanand Science College, Latur, Maharashtra (2019 – 2022)</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-          <section className="mb-6">
-            <motion.h2
-              className="text-2xl font-semibold text-gray-800 mb-2"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: aboutInView ? 1 : 0, y: aboutInView ? 0 : -20 }}
-              transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
-            >
-              Objective
-            </motion.h2>
-            <p className="text-gray-900">
-              To secure a challenging position as a Java Developer at Pragmatic
-              Career Solutions where I can utilize my technical skills in Java
-              programming and contribute effectively to software development
-              initiatives.
-            </p>
-          </section>
-
-          <section className="mb-6">
-            <motion.h2
-              className="text-2xl font-semibold text-gray-800 mb-2"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: aboutInView ? 1 : 0, y: aboutInView ? 0 : -20 }}
-              transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
-            >
-              Skills
-            </motion.h2>
-            <p className="text-gray-900">
-              Languages: Java, SQL, JavaScript, HTML/CSS
-            </p>
-            <p className="text-gray-900">
-              Frameworks: Hibernate, React.js, Spring Boot
-            </p>
-            <p className="text-gray-900">Tools & Platforms: Git, GitHub</p>
-          </section>
-        </motion.section>
-
-        <motion.section
-          ref={educationRef}
-          className="mb-6"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: educationInView ? 1 : 0, y: educationInView ? 0 : 50 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        >
-          <motion.h2
-            className="text-2xl font-semibold text-gray-800 mb-2"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: educationInView ? 1 : 0, y: educationInView ? 0 : -20 }}
-            transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-          >
-            Education
-          </motion.h2>
-          <ul className="list-none mb-2">
-            {steps.map((step, index) => (
-              <motion.li
-                key={index}
-                className="mb-2"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: educationInView ? 1 : 0, y: educationInView ? 0 : 20 }}
-                transition={{ duration: 0.6, delay: index * 0.2 + 0.4, ease: "easeOut" }}
-              >
-                <h3 className="text-lg font-bold text-gray-800 mb-1">
-                  {step.title}
-                </h3>
-                <p className="text-gray-900">{step.description}</p>
-              </motion.li>
-            ))}
-          </ul>
-        </motion.section>
-
-        <motion.section
-          ref={experienceRef}
-          className="mb-6"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: experienceInView ? 1 : 0, y: experienceInView ? 0 : 50 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        >
-          <motion.h2
-            className="text-2xl font-semibold text-gray-800 mb-2"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: experienceInView ? 1 : 0, y: experienceInView ? 0 : -20 }}
-            transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-          >
-            Professional Experience
-          </motion.h2>
-          <p className="text-gray-900 mb-2">
-            React.js Developer Intern, Ricoz, Pune, Maharashtra (2023 – 2024)
-          </p>
-          <ul className="list-disc list-inside text-gray-900">
-            <motion.li
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: experienceInView ? 1 : 0, x: experienceInView ? 0 : -20 }}
-              transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
-            >
-              Developed and maintained 80+ user interfaces using React.js.
-            </motion.li>
-            <motion.li
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: experienceInView ? 1 : 0, x: experienceInView ? 0 : -20 }}
-              transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
-            >
-              Collaborated with the design team to implement 75+ responsive web
-              pages.
-            </motion.li>
-            <motion.li
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: experienceInView ? 1 : 0, x: experienceInView ? 0 : -20 }}
-              transition={{ duration: 0.6, delay: 0.8, ease: "easeOut" }}
-            >
-              Created 50+ dynamic web applications with JavaScript and HTML/CSS.
-            </motion.li>
-            <motion.li
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: experienceInView ? 1 : 0, x: experienceInView ? 0 : -20 }}
-              transition={{ duration: 0.6, delay: 1, ease: "easeOut" }}
-            >
-              Integrated 15 RESTful APIs to ensure seamless functionality.
-            </motion.li>
-          </ul>
-        </motion.section>
-
+        {/* Experience */}
+        <div className="bg-gray-800 rounded-lg p-6 shadow-lg">
+          <h2 className="text-2xl font-semibold mb-4">Experience</h2>
+          <div className="space-y-6">
+            <div className="flex items-start">
+              <BriefcaseIcon className="h-6 w-6 text-indigo-500 mr-4" />
+              <div>
+                <h3 className="font-semibold">React.js Developer Intern</h3>
+                <p className="text-sm text-gray-400">Ricoz, Pune, Maharashtra (2023 – 2024)</p>
+                <ul className="list-disc list-inside text-sm text-gray-400">
+                  <li>Developed and maintained 80+ user interfaces using React.js.</li>
+                  <li>Collaborated with design teams to implement 75+ responsive web pages.</li>
+                  <li>Created 50+ dynamic web applications with JavaScript, HTML, and CSS.</li>
+                  <li>Integrated 15 RESTful APIs for smooth functionality across applications.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </header>
+    </div>
   );
 };
 
