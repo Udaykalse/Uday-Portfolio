@@ -3,8 +3,8 @@ import { FaLinkedin, FaGithub, FaInstagram, FaTwitter, FaEnvelope } from "react-
 
 function Footer() {
   return (
-    <footer className="fixed bottom-0 left-0 w-full bg-gray-800 text-white py-4 flex flex-col items-center">
-      <div className="flex space-x-4 mb-2">
+    <footer className="w-full bg-gray-800 text-white py-4 flex flex-col items-center">
+      <div className="flex flex-wrap justify-center space-x-4 mb-2">
         <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
           <FaLinkedin size={24} />
         </a>
@@ -21,7 +21,7 @@ function Footer() {
           <FaEnvelope size={24} />
         </a>
       </div>
-      <div className="text-sm">
+      <div className="text-sm text-center px-4">
         <p>© {new Date().getFullYear()} Uday Kalse. All rights reserved.</p>
       </div>
     </footer>
