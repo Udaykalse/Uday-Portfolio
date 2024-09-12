@@ -1,7 +1,7 @@
 const blogData = [
     {
-      title: "Feature 1",
-      description: "Description of Feature 1.",
+      title: "Effortless Form Handling in React",
+      description: "Just implemented a form using react-hook-form with smooth validation and reset functionality for a seamless user experience! 🚀",
       link: "#"
     },
     {
