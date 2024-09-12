@@ -3,7 +3,7 @@ import blogData from './blogData';
 
 function Blogs() {
   return (
-    <div className="flex flex-wrap justify-center bg-divColor w-full h-screen p-4">
+    <div className="flex flex-wrap justify-center bg-divColor w-full h-full p-4">
       {blogData.map((blog, index) => (
         <div key={index} className="p-4 w-80">
           <div className="relative flex flex-col rounded-lg h-64 dark:bg-gray-800 bg-teal-400 p-4 transition-transform transform hover:scale-105 hover:shadow-lg cursor-pointer overflow-hidden">
