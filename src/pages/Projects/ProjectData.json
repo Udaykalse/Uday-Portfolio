@@ -3,15 +3,15 @@
     "Name": "Full-Stack Applications-Blog",
     "Image": "https://img.freepik.com/premium-vector/social-media-marketing-concept-with-people-scene-flat-web-design-man-with-megaphone-making-promotion-blog-data-analysis-vector-illustration-social-media-banner-marketing-material_9209-14412.jpg?w=1380",
     "Description": "A dynamic full-stack blog application built using the MERN stack, allowing users to create, read, update, and delete posts. Features user authentication, comment functionality, and responsive design for an optimal user experience.",
-    "Github": "https://github.com/project1",
-    "Live": "https://project1.live"
+    "Github": "https://github.com/Udaykalse/mernBLOG",
+    "Live": "https://github.com/Udaykalse/mernBLOG"
   },
   {
     "Name": "Authentication and Authorization",
     "Image": "https://img.freepik.com/premium-vector/website-security-flat-illustration-editable-vector-design_203633-1079.jpg?w=826",
     "Description": "Authentication and Authorization:- is a MERN stack project that implements secure user authentication and role-based access control (RBAC) for managing resources efficiently.",
-    "Github": "https://github.com/project2",
-    "Live": "https://project2.live"
+    "Github": "https://github.com/Udaykalse/OAuth-Application-Backend",
+    "Live": "https://github.com/Udaykalse/OAuth-Application-Backend"
   },
   {
     "Name": "Full-Stack Applications-MovieSite",
@@ -31,7 +31,7 @@
     "Name": "URL Shortener",
     "Image": "https://res.cloudinary.com/talend/image/upload/w_1408/q_auto/qlik/glossary/data-integration/seo-hero-data-integration_d29atr.jpg",
     "Description": "This MERN stack application allows users to shorten long URLs into compact links that are easy to share. The app features a user-friendly interface for inputting URLs, generates unique short links using the nanoid library, and tracks the number of clicks on each shortened URL, providing a seamless and efficient way to manage links.",
-    "Github": "https://github.com/project2",
-    "Live": "https://project2.live"
+    "Github": "https://github.com/Udaykalse/URL-Shortener-Server",
+    "Live": "https://github.com/Udaykalse/URL-Shortener-Server"
   }
 ]
