@@ -28,9 +28,9 @@
     "Live": "https://project2.live"
   },
   {
-    "Name": "Data Integration",
+    "Name": "URL Shortener",
     "Image": "https://res.cloudinary.com/talend/image/upload/w_1408/q_auto/qlik/glossary/data-integration/seo-hero-data-integration_d29atr.jpg",
-    "Description": "The MERN project Data Integration involves building a robust platform that seamlessly integrates data across MongoDB, Express.js, React, and Node.js, ensuring efficient handling and processing of diverse datasets.",
+    "Description": "This MERN stack application allows users to shorten long URLs into compact links that are easy to share. The app features a user-friendly interface for inputting URLs, generates unique short links using the nanoid library, and tracks the number of clicks on each shortened URL, providing a seamless and efficient way to manage links.",
     "Github": "https://github.com/project2",
     "Live": "https://project2.live"
   }
