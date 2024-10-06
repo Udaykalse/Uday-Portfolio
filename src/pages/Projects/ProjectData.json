@@ -11,7 +11,7 @@
     "Image": "https://img.freepik.com/premium-vector/website-security-flat-illustration-editable-vector-design_203633-1079.jpg?w=826",
     "Description": "Authentication and Authorization:- is a MERN stack project that implements secure user authentication and role-based access control (RBAC) for managing resources efficiently.",
     "Github": "https://github.com/Udaykalse/OAuth-Application-Backend",
-    "Live": "https://github.com/Udaykalse/OAuth-Application-Backend"
+    "Live": "https://o-auth-application-frontend.vercel.app/"
   },
   {
     "Name": "Full-Stack Applications-MovieSite",
