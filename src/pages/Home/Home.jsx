@@ -48,8 +48,9 @@ function Home() {
           <div className="flex flex-col md:flex-row gap-4 mb-4">
             <button
               onClick={() => openResume("frontend")}
-              className="bg-green-600 hover:bg-green-700 text-white text-sm font-medium py-1 px-3 rounded-lg flex items-center transition duration-300"
+              className="bg-green-600 hover:bg-green-700 text-white text-sm font-medium rounded-lg flex items-center transition duration-300"
             >
+              {/* py-1 px-3  */}
               <img
                 src={frontendIcon}
                 alt="Frontend Icon"
@@ -59,8 +60,9 @@ function Home() {
             </button>
             <button
               onClick={() => openResume("fullstack")}
-              className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-1 px-3 rounded-lg flex items-center transition duration-300"
+              className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium  rounded-lg flex items-center transition duration-300 p-2"
             >
+              {/* py-1 px-3  */}
               <img
                 src={fullstackIcon}
                 alt="Fullstack Icon"
